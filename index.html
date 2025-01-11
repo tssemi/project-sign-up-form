@@ -25,25 +25,43 @@
         </div>
         <fieldset>
             <legend>Let's get started</legend>
-            <div class="user-name">
-
+            <div class="user-first-name">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" 
+                name="user-first-name" required maxlength="20">
             </div>
             <div class="user-last-name">
-
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" 
+                name="user-last-name" required maxlength="20">
             </div>
             <div class="user-email">
-
+                <label for="email">Email</label>
+                <input type="email" id="email" 
+                name="user-email" required>
             </div>
-            <div class="user-phone-number">
-            
+            <div class="user-phone-num">
+                <label for="phone-num">Phone Number</label>
+                <input type="tel" id="phone-num" 
+                name="user-phone-num" required>
             </div>
             <div class="user-password">
-
+                <label for="password">Password</label>
+                <input type="password" id="password" 
+                name="user-password" required>
             </div>
             <div class="user-confirm-password">
-                
+                <label for="confirm-password">Confirm password</label>
+                <input type="password" id="confirm-password" 
+                name="user-confirm-password" required>
             </div>
         </fieldset>
+        <div class="submit">
+            <button type="submit">Create Account</button>
+        </div>
+        <div class="log-in">
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
     </form>
 </body>
 </html>
