@@ -4,7 +4,6 @@
          url('fonts/norse-bold-kit/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 * {
@@ -18,7 +17,7 @@ body {
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
 }
 
@@ -53,6 +52,34 @@ header {
 }
 
 form {
+    /*background-color: rgb(239, 255, 255);*/
+    font-weight: 600;
     flex: 1;
-    background-color: rgb(201, 255, 255);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.introduction p:nth-last-child(1){
+    margin-top: 1.5rem;
+}
+.introduction, .submit, .log-in {
+    margin-left: 2rem;
+    width: 90%;
+}
+
+fieldset {
+    padding: 0;
+    margin: 2.5rem 0 2rem ;
+    display: flex;
+    flex-flow: row wrap;
+}
+fieldset div, legend {
+    margin: 1rem 2rem;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
 }
