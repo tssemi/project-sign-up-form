@@ -47,14 +47,18 @@
                 name="user-phone-num" required>
             </div>
             <div class="user-password">
-                <label for="password">Password</label>
+                <label for="password">Password <span>(It must contain at least 1 number and an upper/lowercase letter)</span></label>
                 <input type="password" id="password" 
-                name="user-password" required>
+                name="user-password" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                placeholder="minimum 8 characters" required>
             </div>
             <div class="user-confirm-password">
-                <label for="confirm-password">Confirm password</label>
+                <label for="confirm-password">Confirm password<span>(Same as before)</span></label>
                 <input type="password" id="confirm-password" 
-                name="user-confirm-password" required>
+                name="user-confirm-password"
+                pattern="(?=.*\d)(?=.*[A-Z]).{8,}"
+                placeholder="minimum 8 characters" required>
             </div>
         </fieldset>
         <div class="submit">

@@ -100,12 +100,17 @@ fieldset div input, .submit button {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
 
-    width: 90%;
+    width: 16rem;
     height: 2rem;
     border-radius: 4px;
     border: 0.5px solid rgb(177, 177, 177);
     box-shadow: -2px 5px var(--main-shadow);
 }
+fieldset div label span {
+    display: block;
+    font-size: 8px;
+}
+
 input:focus {
     outline: 1.5px solid rgb(133, 170, 255);
 }
@@ -115,11 +120,15 @@ input:focus-within:invalid {
     outline: 1.5px solid red;
 }
 
+input[type="password"]::placeholder {
+    font-size: 10px;
+}
+
 .submit button {
     color: rgb(71, 126, 255);
     background-color: rgb(202, 218, 255);
     margin-bottom: 1.5rem;
-    width: 16rem;
+    width: 14rem;
 }
 .submit button:hover {
     background-color: rgb(202, 218, 255, 0.7);
